@@ -1,0 +1,115 @@
+.cont {
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-block {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    line-height: 20px;
+    justify-content: flex-end;
+    margin-top: 45px;
+    padding-left: 10.5%;
+}
+  
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand__name {
+    font-size: 24px;
+    font-family: 'ProximaNovaSemibold';
+    & p {
+        display: flex;
+        margin: 0px 0px 0px 18px;
+        align-items: center;
+        & span {
+            color: $logoRose;
+            margin-right: 8px;
+        }
+    }
+    
+}
+
+.burger {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav {
+    width: 100%;
+    max-width: 580px;
+}
+
+.nav__list {
+    max-width: 580px;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    font-size: 1.2em;
+    font-family: 'ProximaNovaSemibold';
+    text-transform: uppercase;
+    & a {
+        color: $mainTextBlack;
+    }
+    & a:hover {
+        color: $hoverMenuRose;
+    }
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.description {
+    width: 50%;
+    padding: 240px 0 0 203px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.description__name {
+    max-width: 435px;
+    font-size: 35px;
+    line-height: 1.3;
+    color: $mainTextBlack;
+    font-family: 'ProximaNovaSemibold';
+    text-transform: uppercase;
+}
+
+.description__slogan {
+    font-size: 44px;
+    color: $sloganColor;
+    font-family: 'Corinthia';
+}
+
+.description__content {
+    max-width: 320px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $mainTextBlack;
+    font-family: 'ProximaNovaLight';
+}
+
+.photo {
+    width: 50%;
+    display: flex;
+    & img {
+        width: 100%;
+        background-size: cover;
+    }
+}

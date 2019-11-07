@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    vertical-align: inherit;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    // overflow: hidden;
+    font: 10px/1em 'Corinthia','ProximaNovaLight', 'ProximaNovaLightIt', 'ProximaNovaRegular', 'ProximaNovaSemibold', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    &:hover {
+      text-decoration: none;
+    }
+}
+
+p {
+    margin-bottom: 0;
+}
+
+button {
+    border: 0;
+    &:focus {
+    outline: 0;
+    }
+}
+a {
+    text-decoration: none;
+}
