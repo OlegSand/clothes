@@ -1,0 +1,21 @@
+
+
+.right-content {
+    align-items: flex-end;
+    & .description__name {
+        text-align: right;
+    }
+    & .description__content {
+        text-align: right;
+    }
+}
+
+.left-content {
+    align-items: flex-start;
+    & .description__name {
+        text-align: left;
+    }
+    & .description__content {
+        text-align: left;
+    }
+}
