@@ -19,3 +19,26 @@
         text-align: left;
     }
 }
+
+.box-block {
+    width: 33%;
+    max-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & picture {
+        height: 100%;
+    }
+}
+
+.box {
+    & .section-card {
+        width: 100%;
+        max-height: 170px;
+        border: $borderCardTransparent;
+        transition: .5s ease-in-out;
+        &:hover {
+            border: $borderCard;
+        }
+    }
+}
