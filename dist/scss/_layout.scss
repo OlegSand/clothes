@@ -233,19 +233,53 @@ main {
             padding: 25px 25px 25px 0;
             align-items: flex-end;
             text-align: right;
+            & p+p {
+                margin-top: 10px;
+            }
         }
     }
     &__center-block {
         display: flex;
         align-items: center;
         justify-content: center;
+        & picture {
+            display: flex;
+            align-items: flex-end;
+        }
     }
     &__right-block {
         & .section-card {            
             padding: 25px 0 25px 25px;
             align-items: flex-start;
             text-align: left;
+            & p+p {
+                margin-top: 10px;
+            }
         }
     }
 }
 
+footer {
+    & .description__name {
+        max-width: 550px;
+    }
+    & .description__content {
+        max-width: 445px;
+        font-size: 18px;
+    }
+    & form {
+        display: flex;
+        flex-direction: column;
+        height: 125px;
+        justify-content: space-between;
+        & input[type="text"] {
+            border: none;
+            outline: none;
+            border-bottom: $formBorderGray;
+        }
+        & input::placeholder {
+            color: red;
+            margin-bottom: 10px;
+        }
+    }
+}
