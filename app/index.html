@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
     <!-- HEADER START -->
     <header>
-        <section>
+        <section id="head">
             <div class="cont">
                 <div class="navigation-block">
                     <div class="brand">
@@ -29,11 +29,10 @@
                         </div>
                         <nav class="nav"> <!--- nav-list -->
                             <ul class="nav__list"><!--- nav -->
-                                <li><a href="#">главная</a></li>
-                                <li><a href="#">преимущества</a></li>
+                                <li><a href="#head">главная</a></li>
+                                <li><a href="#unique">преимущества</a></li>
                                 <li><a href="#">отзывы</a></li>
                                 <li><a href="#">контакты</a></li>
-                                <button type="button" class="burger"></button>
                             </ul>
                         </nav>
                     </div>
@@ -59,7 +58,7 @@
     <!-- HEADER END -->
     <!-- MAIN START -->
     <main>
-        <section>
+        <section id="for_you">
             <div class="cont">
                 <div class="wrapper for-you">
                     <div class="description right-content">
@@ -78,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="unique">
             <div class="cont">
                 <div class="wrapper">
                     <div class="description left-content">
@@ -214,16 +213,22 @@
                         </div>
                         <form class="form">
                             <fieldset class="form__group">
-                                <input class="form__input" type="text" name="name" placeholder="">
-                                <label class="form__label">Ваше имя</label>
+                                <input class="form__input-text" type="text" id="user_name" name="name" placeholder=" ">
+                                <label for="client_name" class="form__label-text">Ваше имя</label>
                             </fieldset>
                             <fieldset class="form__group">
-                                <input class="form__input" type="text" name="phone" placeholder="">
-                                <label class="form__label">Ваш телефон</label>
+                                <input class="form__input-text" type="text" id="user_phone" name="phone" placeholder=" ">
+                                <label for="client_phone" class="form__label-text">Ваш телефон</label>
                             </fieldset>
-                            <input type="file" name="file" placeholder="Прикрепить файл">
+                            <fieldset class="form__group">
+                                <input class="form__input-file" type="file" name="file" id="loadfile">
+                                <label for="loadfile" class="form__label-file">
+                                    <img src="img/download-ic.png" alt="load-icon">
+                                    <p>Прикрепить файл</p>
+                                </label>
+                            </fieldset>
+                            <button type="button" class="application__button">Оставить контакты</button>
                         </form>
-                        <!-- <button type="button" class="description__button">Оставить контакты</button> -->
                     </div>
                     <div class="photo">
                         <img src="img/4th-bg.png" alt="mom and daughter" class="img">
@@ -233,6 +238,7 @@
         </section>
     </footer>
     <!-- FOOTER END -->
+    <script src="js/main.js"></script>
 </body>
 </html>
 

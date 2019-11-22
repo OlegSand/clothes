@@ -1,4 +1,74 @@
+//burger style
 
+.burger {
+    display: none;
+    position: absolute;
+    align-items: center;
+    top: 15%;
+    right: 10%;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.burger__plank {
+    width: 40px;
+    height: 5px;
+    background: $mainTextBlack;
+    position: relative;
+    transition: all .5s;
+    border-radius: 30px;
+    cursor: pointer;
+    &::before {
+        content: '';
+        width: 40px;
+        height: 5px;
+        background: $mainTextBlack;
+        position: absolute;
+        left: 0;
+        bottom: 15px;
+        transition: all .5s;
+        border-radius: inherit;
+    }
+    &::after {
+        content: '';
+        width: 40px;
+        height: 5px;
+        background: $mainTextBlack;
+        position: absolute;
+        left: 0;
+        top: 15px;
+        transition: all .5s;
+        border-radius: inherit;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.close-menu {
+    background: transparent;
+    &::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    &::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+.close-menu_top {
+    top: -1.5em;
+    right: 1.5em;
+}
+
+.height-max {
+    height: 100vh;
+    margin: 0;
+    background: $mainTextBlack;
+    z-index: 9;
+}
+
+// content align
 
 .right-content {
     align-items: flex-end;
@@ -35,10 +105,38 @@
     & .section-card {
         width: 100%;
         max-height: 170px;
-        border: $borderCardTransparent;
+        border: 2px solid $borderCardTransparent;
         transition: .5s ease-in-out;
         &:hover {
-            border: $borderCard;
+            border: 2px solid $borderCard;
         }
     }
+}
+
+//  BUTTONS
+
+.description__button {
+    font-size: 12px;
+    font-family: 'ProximaNovaSemibold';
+    letter-spacing: 0.12px;
+    padding: 25px 33px;
+    background: transparent;
+    border: 1px solid $buttonBlack;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.application__button {
+    font-size: 12px;
+    font-family: 'ProximaNovaSemibold';
+    letter-spacing: 0.12px;
+    padding: 25px 33px;
+    color: $mainTextWhite;
+    background-color: buttonBgColor;
+    background-image: $buttonBgImgGradient;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.d-none {
+    display: none;
 }

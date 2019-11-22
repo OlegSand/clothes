@@ -5,8 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel dist -d app --presets es2015",
-    "watch": "babel dist -d app --presets es2015 -w"
+    "build": "babel dist -d app --presets env",
+    "watch": "babel dist/js -d app/js --presets env -w"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",

@@ -1,0 +1,90 @@
+
+
+@media (max-width: 1200px) {
+    
+    
+}
+
+@media (max-width: 992px) {
+    body {
+        font: 8px/1em ;
+    }
+    .menu {
+        align-items: center;
+        justify-content: center;
+    }
+    .burger {
+        display: block;
+    }
+    .nav {
+        display: none;
+        height: 0;
+        transition: 1s;
+        margin-bottom: 500%;
+        & .nav-link {
+            &:hover {
+                filter: brightness(.7);
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .show-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        & .nav__list {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100vh;
+        }
+    }
+    .show-nav {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background: $mainTextWhite;
+    }
+    .description {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: $transparentWhite;
+        &>* {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        } 
+        & p,&__slogan, &__content {
+            text-align: center;
+        }
+    }
+    .left-content, .right-content {
+        & .description__name {
+            text-align: center;
+        }
+    }
+    .photo {
+        display: none;
+    }
+    #head {
+        background-image: url(../img/1st-bg.png);
+        background-size: cover;
+    }
+    #for_you {
+        background-image: url(../img/2nd-bg.png);
+        background-size: cover;
+    }
+    #unique {
+        background-image: url(../img/3rd-bg.png);
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+}
