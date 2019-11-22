@@ -20,6 +20,7 @@ section {
     justify-content: flex-end;
     margin-top: 45px;
     padding-left: 10.5%;
+    z-index: 9;
 }
   
 .brand {
@@ -316,6 +317,7 @@ footer {
 .form__label-file {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     & img {
         margin: 0 10px;
     }
